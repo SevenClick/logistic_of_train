@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Logistic of train</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="right_side">
@@ -19,7 +19,13 @@
 
 	<div class="wrapper">
 		<header>
-			<p>P</p>
+			<form autocomplete="off" action="/action_page.php">
+			  <div class="autocomplete" style="width:300px;">
+			    <input id="myInput" type="text" name="myCountry" placeholder="Country">
+			  </div>
+			  <input type="submit">
+			</form>
+			<script src="js/searchObjects.js"></script>
 		</header>
 
 		<main>
@@ -53,6 +59,6 @@
 			
 		</footer>
 	</div>
-	<script defer src="script.js"></script>
+	<script defer src="js/script.js"></script>
 </body>
 </html>
