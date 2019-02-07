@@ -27,7 +27,7 @@ var root = document.querySelector(':root');
 // var myMap = document.getElementById('map');
 arrow.addEventListener("click", function() {
   if (sample.style.display === "block") {
-    leftSide.style.setProperty('min-width', '25px');
+    leftSide.style.setProperty('width', '25px');
     sample.style.display = "none";
     root.style.setProperty('--indent', '25px');
     //wrapper.style.margin = "0";
@@ -35,7 +35,7 @@ arrow.addEventListener("click", function() {
   } else {
     //leftSide.style.width = "var(--indent)";
     //wrapper.style.margin_left = "calc(33% - 1px)";
-    leftSide.style.setProperty('min-width', '350px');
+    leftSide.style.setProperty('width', 'auto');
     sample.style.display = "block";
     root.style.setProperty('--indent', 'calc(23% - 1px)');
     // myMap.style.width = "95%";

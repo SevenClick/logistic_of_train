@@ -8,11 +8,12 @@ body, html, form {
 }
 
 body{
-	position: relative;
+	display: flex;
 }
 
 #left_side {
-	width: var(--indent);
+	/*width: var(--indent);*/
+	width: auto;
 	/*min-width: 350px;*/
 	/*max-width: 400px;*/
 	height: 100vh;
@@ -20,7 +21,8 @@ body{
 
 	/*border: 1px solid #000;*/
 
-	position: absolute;
+	position: sticky;
+	top: 0;
 	z-index: 100;
 	background: #eee;
 	box-sizing: border-box;
@@ -28,7 +30,7 @@ body{
 }
 #sample {
 	display: block;
-	width: 100%;
+	width: 180px;
 }
 
 #arrow {
@@ -61,8 +63,9 @@ i {
 
 
 #wrapper {
-	margin-left: var(--indent);
+	/*margin-left: var(--indent);*/
 	box-sizing: border-box;
+	width: 100%;
 	/*width: 100%;*/
 }
 
@@ -91,8 +94,12 @@ iframe {
 
 
 
-
-
+.result {
+	height: 350px;
+}
+#donutchart{
+	height: 100%;
+}
 
 
 
