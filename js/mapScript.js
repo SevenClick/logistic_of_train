@@ -71,7 +71,7 @@ function init() {
     }
 
     // Добавляем меню в тэг BODY.
-    menu.appendTo($('body'));
+    menu.appendTo($('menu'));
     // Выставляем масштаб карты чтобы были видны все группы.
     myMap.setBounds(myMap.geoObjects.getBounds());
 }

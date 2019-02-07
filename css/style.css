@@ -1,8 +1,8 @@
 :root {
-	--indent: calc(33% - 1px);
+	--indent: calc(20% - 1px);
 }
 
-body, html {
+body, html, form {
 	padding: 0;
 	margin: 0;
 }
@@ -11,22 +11,27 @@ body{
 	position: relative;
 }
 
-.right_side {
+#left_side {
 	width: var(--indent);
-	min-width: 350px;
-	max-width: 400px;
+	/*min-width: 350px;*/
+	/*max-width: 400px;*/
 	height: 100vh;
+	display: flex;
 
 	/*border: 1px solid #000;*/
 
 	position: absolute;
 	z-index: 100;
-	background: #aaa;
+	background: #eee;
 	box-sizing: border-box;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+#sample {
+	display: block;
+	width: 100%;
+}
 
-.arrow {
+#arrow {
 	float: right;
 	height: 100%;
 	width: 25px;
@@ -39,13 +44,13 @@ body{
 	cursor: pointer;
 }
 
-.arrow:hover {
-	background: #555;
+#arrow:hover {
+	background: #ccc;
 }
 i {
 	font-size: 30px;
 }
-.arrow:hover i{
+#arrow:hover i{
 	font-size: 40px;
 }
 
@@ -55,7 +60,7 @@ i {
 
 
 
-.wrapper {
+#wrapper {
 	margin-left: var(--indent);
 	box-sizing: border-box;
 	/*width: 100%;*/
@@ -66,6 +71,10 @@ header {
 	height: 50px;
 	width: 100%;
 	padding: 1px;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
 	/*border: 0.5px solid #000;*/
 	background: #aaf;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -113,6 +122,14 @@ iframe {
   background-color: white;
   display: none;
   overflow: hidden;
+}
+.panel > button {
+	background-color: DodgerBlue;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 16px;
+  float: right;
 }
 
 
